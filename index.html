@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Local Storage</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section>
+        <div>
+          <form action="" class="user-form">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" />
+            <label for="mail">Correo:</label>
+            <input type="text" name="mail" id="mail" />
+            <label for="message">Mensaje:</label>
+            <input type="text" name="message" id="message" />
+            <button type="submit" id="submitBtn" class="btn">Enviar</button>
+          </form>
+          <p id="error" class="error"></p>
+        </div>
+      </section>
+
+      <section>
+        <button id="deleteBtn" class="btn-delete">Borrar Registros</button>
+        <div id="userList"></div>
+      </section>
+    </main>
+  </body>
 </html>
