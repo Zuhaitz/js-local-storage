@@ -46,16 +46,11 @@ function addUserToLocal(event) {
 function addUserToDOM(user) {
   let card = document.createElement("div");
   card.classList.add("user-card");
-  let nameP = document.createElement("p");
-  let mailP = document.createElement("p");
-  let messageP = document.createElement("p");
 
-  nameP.innerHTML = "Nombre: " + user.userName;
-  mailP.innerHTML = "Correo: " + user.userMail;
-  messageP.innerHTML = "Mensaje: " + user.userMessage;
-  card.appendChild(nameP);
-  card.appendChild(mailP);
-  card.appendChild(messageP);
+  card.innerHTML =
+    `<p>Nombre: ${user.userName}</p>` +
+    `<p>Correo: ${user.userMail}</p>` +
+    `<p>Mensaje: ${user.userMessage}</p>`;
 
   userList.appendChild(card);
 }
